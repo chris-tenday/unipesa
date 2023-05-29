@@ -1,18 +1,14 @@
 {
-    "name": "0.0.0/composer-include-files",
+    "name": "unipesa",
     "type": "composer-plugin",
-    "description": "Include files at a higher priority than autoload files. Useful for overriding Laravel helpers.",
+    "description": "Paiement via le gateway Unipesa",
     "keywords": ["composer", "autoload"],
-    "homepage": "https://github.com/funkjedi/composer-include-files",
+    "homepage": "https://github.com/chris-tenday/unipesa",
     "license": "MIT",
     "authors": [
         {
-            "name": "Tim Robertson",
-            "email": "funkjedi@gmail.com"
-        },
-        {
-            "name": "Theodore R. Smith",
-            "email": "theodore@phpexperts.pro"
+            "name": "Chris Tenday",
+            "email": "ctenday@gmail.com"
         }
     ],
     "require": {
