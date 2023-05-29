@@ -1,0 +1,18 @@
+{
+    "name": "chris-tenday/unipesa",
+    "description": "Paiement via le gateway unipesa",
+    "autoload": {
+        "psr-4": {
+            "ChrisTenday\\Unipesa\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chris Tenday",
+            "email": "ctenday@gmail.com"
+        }
+    ],
+    "require": {
+        "curl/curl": "^2.5"
+    }
+}
