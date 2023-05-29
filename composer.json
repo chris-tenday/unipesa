@@ -1,5 +1,5 @@
 {
-    "name": "chris/unipesa",
+    "name": "chris-tenday/unipesa",
     "type": "composer-plugin",
     "description": "Paiement via le gateway Unipesa",
     "keywords": ["composer", "autoload"],
