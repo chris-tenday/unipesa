@@ -1,5 +1,5 @@
 {
-    "name": "unipesa",
+    "name": "0.0.1/unipesa",
     "type": "composer-plugin",
     "description": "Paiement via le gateway Unipesa",
     "keywords": ["composer", "autoload"],
