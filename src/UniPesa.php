@@ -17,6 +17,7 @@ class UniPesa
 
     public function __construct()
     {
+        echo "Hello from unipesa";
         $this->postData['merchant_id']=$this->merchantId;
     }
 
