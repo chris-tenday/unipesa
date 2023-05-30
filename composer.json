@@ -3,7 +3,7 @@
     "description": "Paiement via le gateway unipesa",
     "autoload": {
         "psr-4": {
-            "ChrisTenday\\Unipesa\\": "src/UniPesa.php"
+            "ChrisTenday\\Unipesa\\": "src"
         }
     },
     "authors": [
