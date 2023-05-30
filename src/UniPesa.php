@@ -17,7 +17,6 @@ class UniPesa
 
     public function __construct()
     {
-        echo "Hello from unipesa";
         $this->postData['merchant_id']=$this->merchantId;
     }
 
@@ -32,6 +31,8 @@ class UniPesa
      */
     public function pay($paymentType,$phone,$montant,$devise="USD",$pays="CD")
     {
+        $url="https://api.unipesa.tech/{public_id}/payment_c2b";
+
         $providerId=0;
 
         switch($paymentType)
@@ -70,8 +71,10 @@ class UniPesa
         /**
          * Lancer la requete.
          */
-        $response=$this->executeRequest("","POST",$this->postData);
-        echo $response; exit();
+        $headers=array("Content-type"=>"application/json");
+        $response=$this->executeRequest($url,$headers,"POST",$this->postData);
+
+        return $response;
 
     }
 
