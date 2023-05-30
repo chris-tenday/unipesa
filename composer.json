@@ -2,8 +2,8 @@
     "name": "chris-tenday/unipesa",
     "description": "Paiement via le gateway unipesa",
     "autoload": {
-        "psr-4": {
-            "ChrisTenday\\Unipesa\\": "src/"
+        "psr-0": {
+            "unipesa": "src/"
         }
     },
     "authors": [
