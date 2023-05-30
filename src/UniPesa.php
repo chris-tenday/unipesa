@@ -31,7 +31,7 @@ class UniPesa
      */
     public function pay($paymentType,$phone,$montant,$devise="USD",$pays="CD")
     {
-        $url="https://api.unipesa.tech/{public_id}/payment_c2b";
+        $url="https://api.unipesa.tech/$this->publicId/payment_c2b";
 
         $providerId=0;
 
