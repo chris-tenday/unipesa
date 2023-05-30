@@ -6,6 +6,7 @@ namespace ChrisTenday\Unipesa;
 
 use Curl\Curl;
 
+
 class UniPesa
 {
     private $merchantId="cdeff82ac8398c54e3b2da6b3a1296f6af5ec3b4";
@@ -61,7 +62,7 @@ class UniPesa
         $this->postData['amount']=$montant;
         $this->postData['currency']=$devise;
         $this->postData['country']=$pays;
-        $this->postData['callback_url']="";
+        $this->postData['callback_url']="https://example.com/callb";
 
         /**
          * Generer la signature.
@@ -72,6 +73,7 @@ class UniPesa
          * Lancer la requete.
          */
         $headers=array("Content-type"=>"application/json");
+
         $response=$this->executeRequest($url,$headers,"POST",$this->postData);
 
         return $response;
@@ -84,7 +86,7 @@ class UniPesa
      */
     private function generateOrderId()
     {
-        $o=rand(111,9).rand(100,555);
+        $o=time().rand(100,999);
 
         return $o;
     }
@@ -160,6 +162,10 @@ class UniPesa
         foreach($headers as $key=>$val)
         {
             $curl->setHeader($key,$val);
+            if($val=="application/json")
+            {
+                $body=json_encode($body);
+            }
         }
 
         if($requestType=="POST")
