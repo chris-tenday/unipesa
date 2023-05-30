@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Unipesa\Unipesa;
+namespace ChrisTenday\Unipesa;
 
 
 use Curl\Curl;
